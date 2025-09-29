@@ -1,0 +1,11 @@
+[build]
+  publish = "public"     # folder that contains index.html
+  command = ""           # no build step for plain HTML/JS
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/chat"
+  to   = "/.netlify/functions/chat"
+  status = 200
